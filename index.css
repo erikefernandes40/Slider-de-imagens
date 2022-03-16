@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header img{
+    width: 200px;
+}
+
+.header{
+    height: 90px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.header .ul li{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.header li:hover {
+    background-color: rgba(220,220,220,0.6);
+}
+
+.ul div{
+    margin-left: 200px;
+}
+
+.header i{
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.slider{
+    flex: 1;
+    overflow: hidden;
+}
+
+.largura-slider{
+    height: 100%;
+    display: flex;
+    transition: all ease 0.5s;
+}
+
+.item-slider{
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.slider-button{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-button i{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 500%;
+}
